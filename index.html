@@ -2,7 +2,8 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no">
 <title>浄化槽の点検・清掃なら一色浄化槽管理センター｜愛知県西尾市一色町・昭和55年創業</title>
 <meta name="description" content="愛知県西尾市一色町の浄化槽維持管理は、昭和55年創業の一色浄化槽管理センターへ。保守点検・清掃・法定検査のワンストップ対応、最大88.5万円の補助金申請サポート、排水管洗浄まで。西尾市長許可第10号。三河湾の環境と暮らしを守る、一色町前野新田の水環境のドクターです。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -319,7 +320,7 @@ ul,ol{list-style:none}
 .footer-copy{font-size:.75rem;opacity:.5}
 
 /* ===== FIXED CTA BAR ===== */
-.fixed-cta{position:fixed;bottom:0;left:0;width:100%;z-index:998;display:flex;transform:translateY(100%);transition:transform .5s ease-out}
+.fixed-cta{position:fixed;bottom:0;left:0;width:100%;z-index:998;display:flex;transform:translateY(100%);transition:transform .5s ease-out;padding-bottom:env(safe-area-inset-bottom,0px)}
 .fixed-cta.show{transform:translateY(0)}
 .fixed-cta a{flex:1;display:flex;align-items:center;justify-content:center;gap:8px;padding:16px;font-weight:700;font-size:1rem;color:#fff;transition:opacity .3s}
 .fixed-cta .cta-phone{background:linear-gradient(135deg,#E8913A,#D47A2A)}
@@ -329,21 +330,180 @@ ul,ol{list-style:none}
 /* ===== BODY PADDING FOR FIXED BARS ===== */
 body{padding-top:64px;padding-bottom:56px}
 
-/* ===== RESPONSIVE ===== */
+/* ===== RESPONSIVE - MOBILE FIRST ===== */
 @media(max-width:768px){
-  .section-padding{padding:60px 0}
-  .reason-card{padding:24px 20px 24px 28px}
-  .about-table th{width:35%}
-  .subsidy-cards{grid-template-columns:1fr}
-  .legal-cards{grid-template-columns:1fr}
-  .problems-grid{grid-template-columns:1fr}
-  .area-circles{width:240px;height:240px}
-  .area-circle.outer{width:240px;height:240px}
-  .area-circle.inner{width:130px;height:130px;top:55px;left:55px}
-  .trust-badges{flex-direction:column;align-items:center}
-  .license-badges{flex-direction:column}
-  .tabs{gap:6px}
-  .tab-btn{padding:10px 16px;font-size:.85rem}
+  /* Base */
+  html{font-size:14px}
+  .container{padding:0 16px}
+  .section-padding{padding:48px 0}
+  .section-title{font-size:1.4rem;margin-bottom:12px;line-height:1.5}
+  .section-sub{font-size:.9rem;margin-bottom:32px}
+
+  /* Header */
+  .nav-inner{height:56px;padding:0 16px}
+  .nav-logo{font-size:.9rem}
+  .nav-logo span{font-size:.7rem}
+  .nav-links{display:none}
+  .hamburger{display:flex}
+  .mobile-menu{top:56px;padding:16px}
+  .mobile-menu a{font-size:.95rem;padding:12px 0}
+
+  /* Hero */
+  #hero{min-height:100svh;padding:80px 16px 60px}
+  .hero-content h1{font-size:1.8rem;letter-spacing:.05em;margin-bottom:16px}
+  .hero-content h2{font-size:.95rem;line-height:1.8;margin-bottom:28px}
+  .trust-badges{flex-direction:column;align-items:center;gap:10px;margin-bottom:28px}
+  .trust-badge{padding:10px 16px;font-size:.8rem;width:100%;justify-content:center}
+  .trust-badge i{font-size:1rem}
+  .hero-cta{font-size:1rem;padding:16px 32px;width:100%;max-width:320px;text-align:center}
+
+  /* Wave */
+  .wave-divider svg{height:36px}
+
+  /* Problems */
+  .problems-grid{grid-template-columns:1fr;gap:12px}
+  .problem-card{padding:18px 16px;gap:12px}
+  .problem-icon{font-size:1.6rem;width:40px}
+  .problem-text{font-size:.9rem}
+  .problems-resolve{font-size:1.05rem;margin-top:28px}
+
+  /* Reasons */
+  .reason-card{padding:20px 16px 20px 22px;margin-bottom:16px;border-left-width:4px}
+  .reason-card:hover{transform:none}
+  .reason-number{font-size:.8rem;padding:3px 12px;margin-bottom:8px}
+  .reason-card h3{font-size:1.05rem;flex-wrap:wrap;gap:6px}
+  .reason-card h3 i{font-size:1.1rem}
+  .reason-card h4{font-size:.9rem;margin-bottom:8px}
+  .reason-card p{font-size:.85rem;line-height:1.8}
+  .mini-cta{margin-top:32px}
+  .btn-secondary{padding:14px 28px;font-size:.9rem;width:100%;max-width:320px;text-align:center}
+
+  /* Services */
+  .tabs{gap:6px;margin-bottom:20px}
+  .tab-btn{padding:10px 14px;font-size:.8rem;flex:1;text-align:center}
+  .tab-content{padding:20px 16px}
+  .tab-content .registration{font-size:.75rem;padding:6px 12px;margin-bottom:14px}
+  .tab-content h3{font-size:1rem}
+  .service-list li{padding:8px 0;font-size:.85rem}
+
+  /* Legal */
+  .legal-alert-header{padding:16px;margin-bottom:24px}
+  .legal-alert-header p{font-size:.9rem}
+  .legal-cards{grid-template-columns:1fr;gap:12px;margin-bottom:24px}
+  .legal-card{padding:20px}
+  .legal-card .icon{font-size:2rem;margin-bottom:8px}
+  .legal-card h3{font-size:1rem}
+  .penalty-table th,.penalty-table td{padding:10px 12px;font-size:.8rem}
+  .legal-safe-box{padding:20px;font-size:.9rem}
+
+  /* Subsidy */
+  .subsidy-cards{grid-template-columns:1fr;gap:12px;margin-bottom:24px}
+  .subsidy-card{padding:20px}
+  .subsidy-card .amount{font-size:1.6rem}
+  .subsidy-card .detail{font-size:.75rem}
+  .subsidy-total{font-size:1.2rem;margin-bottom:24px}
+  .subsidy-total .big{font-size:1.7rem}
+  .alert-box{padding:16px;margin-bottom:16px}
+  .alert-box p{font-size:.82rem}
+  .info-box{padding:16px;margin-bottom:24px}
+  .info-box p{font-size:.85rem;line-height:1.8}
+
+  /* Cost */
+  .cost-table th,.cost-table td{padding:10px 12px;font-size:.8rem}
+  .monthly-highlight{padding:20px}
+  .monthly-highlight .amount{font-size:1.5rem}
+  .monthly-highlight .label{font-size:.85rem}
+  .comparison-note{padding:16px;font-size:.85rem;line-height:1.8}
+  .risk-box{padding:16px}
+  .risk-box h4{font-size:.95rem}
+  .risk-box p{font-size:.82rem}
+
+  /* Environment */
+  .env-grid{grid-template-columns:1fr;gap:24px}
+  .env-text p{font-size:.85rem;line-height:1.8}
+  .sdg-badges{flex-direction:row;justify-content:center;gap:12px}
+  .sdg-badge{width:85px;height:85px}
+  .sdg-badge .sdg-icon{font-size:1.3rem}
+  .sdg-badge .sdg-label{font-size:.55rem}
+  .env-slogan{font-size:1.1rem;margin-top:32px}
+  .env-slogan::before,.env-slogan::after{font-size:1.4rem}
+  .env-bottom{font-size:.85rem;margin-top:16px}
+
+  /* Reviews */
+  .reviews-scroll{gap:12px;padding-bottom:12px}
+  .review-card{flex:0 0 85vw;padding:20px}
+  .review-text{font-size:.85rem;line-height:1.7;margin-bottom:12px}
+  .review-author{font-size:.75rem}
+
+  /* About */
+  .about-table th,.about-table td{padding:10px 12px;font-size:.8rem}
+  .about-table th{width:30%;font-size:.75rem}
+  .license-badges{flex-direction:column;gap:8px}
+  .license-badge{padding:10px 14px;font-size:.75rem}
+  .distinction-box{padding:16px;font-size:.82rem}
+  .philosophy-box{padding:24px}
+  .philosophy-box .quote{font-size:1.1rem}
+  .philosophy-box .desc{font-size:.82rem}
+  .ceo-box{padding:16px;font-size:.82rem;line-height:1.8}
+  .ceo-box br{display:none}
+  .timeline{padding-left:32px;margin-top:28px}
+  .timeline-item{margin-bottom:24px}
+  .timeline-year{font-size:.9rem}
+  .timeline-desc{font-size:.82rem}
+
+  /* FAQ */
+  .faq-item{margin-bottom:8px}
+  .faq-question{padding:16px;font-size:.9rem;gap:8px}
+  .faq-answer-inner{padding:0 16px 16px;font-size:.82rem;line-height:1.8}
+
+  /* Area */
+  .area-circles{width:220px;height:220px}
+  .area-circle.outer{width:220px;height:220px;font-size:.75rem}
+  .area-circle.outer span{bottom:24px}
+  .area-circle.inner{width:120px;height:120px;top:50px;left:50px;font-size:.8rem}
+  .area-text{font-size:.9rem}
+
+  /* Final CTA */
+  #final-cta{padding:48px 16px}
+  .final-catch{font-size:1.3rem;line-height:1.7;margin-bottom:16px}
+  .final-sub{font-size:.9rem;margin-bottom:24px}
+  .final-phone{font-size:1.8rem;margin-bottom:12px}
+  .final-phone i{font-size:1.4rem}
+  .final-info{font-size:.8rem;margin-bottom:20px}
+  .btn-outline{padding:12px 28px;font-size:.9rem;width:100%;max-width:320px;text-align:center}
+
+  /* Footer */
+  .site-footer{padding:36px 16px 20px}
+  .footer-logo{font-size:1rem}
+  .footer-info{font-size:.75rem}
+  .footer-copy{font-size:.7rem}
+
+  /* Fixed CTA Bar */
+  .fixed-cta a{padding:14px 8px;font-size:.9rem;gap:6px}
+  body{padding-top:56px;padding-bottom:52px}
+
+  /* Disable hover effects on touch */
+  .problem-card:hover,.reason-card:hover,.license-badge:hover{transform:none;box-shadow:var(--shadow)}
+  .sdg-badge:hover{transform:none}
+}
+
+/* ===== EXTRA SMALL (iPhone SE etc) ===== */
+@media(max-width:375px){
+  html{font-size:13px}
+  .container{padding:0 12px}
+  #hero{padding:72px 12px 48px}
+  .hero-content h1{font-size:1.6rem}
+  .hero-content h2{font-size:.88rem}
+  .hero-cta{padding:14px 24px;font-size:.9rem}
+  .trust-badge{padding:8px 12px;font-size:.75rem}
+  .section-title{font-size:1.25rem}
+  .reason-card h3{font-size:.95rem}
+  .tab-btn{padding:8px 10px;font-size:.75rem}
+  .subsidy-card .amount{font-size:1.4rem}
+  .final-phone{font-size:1.5rem}
+  .faq-question{font-size:.82rem;padding:14px 12px}
+  .faq-answer-inner{padding:0 12px 14px;font-size:.78rem}
+  .fixed-cta a{padding:12px 6px;font-size:.82rem}
 }
 </style>
 </head>
