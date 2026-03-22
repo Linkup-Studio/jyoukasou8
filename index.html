@@ -1,0 +1,1046 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>浄化槽の点検・清掃なら一色浄化槽管理センター｜愛知県西尾市一色町・昭和55年創業</title>
+<meta name="description" content="愛知県西尾市一色町の浄化槽維持管理は、昭和55年創業の一色浄化槽管理センターへ。保守点検・清掃・法定検査のワンストップ対応、最大88.5万円の補助金申請サポート、排水管洗浄まで。西尾市長許可第10号。三河湾の環境と暮らしを守る、一色町前野新田の水環境のドクターです。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;900&family=Noto+Serif+JP:wght@500;600;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "有限会社 一色町浄化槽管理センター",
+  "description": "浄化槽の保守点検・清掃・修理の専門会社。昭和55年創業。",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "一色町前野新田25-1",
+    "addressLocality": "西尾市",
+    "addressRegion": "愛知県",
+    "addressCountry": "JP"
+  },
+  "telephone": "0563-72-8783",
+  "foundingDate": "1980",
+  "areaServed": "西尾市"
+}
+</script>
+<style>
+/* ===== RESET & BASE ===== */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;-webkit-tap-highlight-color:transparent;font-size:15px}
+body{font-family:'Noto Sans JP',-apple-system,BlinkMacSystemFont,sans-serif;color:#2C2C2C;background:#F7F5F0;line-height:1.75;overflow-x:hidden;-webkit-text-size-adjust:100%}
+img{max-width:100%;height:auto;display:block}
+a{text-decoration:none;color:inherit}
+button{font-family:inherit;cursor:pointer}
+ul,ol{list-style:none}
+
+/* ===== CSS VARIABLES ===== */
+:root{
+  --primary:#1B3A5C;
+  --secondary:#2BA5B5;
+  --accent:#E8913A;
+  --bg:#F7F5F0;
+  --text:#2C2C2C;
+  --sub-bg:#EDF3F7;
+  --danger:#D94040;
+  --dark-navy:#0F2438;
+  --shadow:0 4px 20px rgba(0,0,0,.08);
+  --radius:12px;
+  --font-sans:'Noto Sans JP',-apple-system,BlinkMacSystemFont,sans-serif;
+  --font-serif:'Noto Serif JP',serif;
+  --ease:cubic-bezier(0.16,1,0.3,1);
+}
+
+/* ===== UTILITY ===== */
+.container{max-width:1100px;margin:0 auto;padding:0 20px}
+.section-title{text-align:center;font-family:var(--font-serif);font-size:clamp(1.5rem,4vw,2.2rem);font-weight:700;color:var(--primary);margin-bottom:16px;line-height:1.4;letter-spacing:.04em}
+.section-sub{text-align:center;color:#666;font-size:1rem;margin-bottom:48px;line-height:1.7}
+.section-padding{padding:80px 0}
+.bg-white{background:var(--bg)}
+.bg-sub{background:var(--sub-bg)}
+
+/* ===== SCROLL ANIMATION ===== */
+.fade-in{opacity:0;transform:translateY(30px);transition:opacity .6s ease-out,transform .6s ease-out}
+.fade-in.visible{opacity:1;transform:translateY(0)}
+
+/* ===== WAVE DIVIDER ===== */
+.wave-divider{position:relative;width:100%;overflow:hidden;line-height:0}
+.wave-divider svg{display:block;width:100%;height:60px}
+.wave-divider.flip{transform:rotate(180deg)}
+
+/* ===== HEADER / NAV ===== */
+.site-header{position:fixed;top:0;left:0;width:100%;z-index:1000;background:rgba(27,58,92,.95);backdrop-filter:blur(8px);transition:box-shadow .3s}
+.site-header.scrolled{box-shadow:0 2px 20px rgba(0,0,0,.2)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:64px;padding:0 20px;max-width:1200px;margin:0 auto}
+.nav-logo{color:#fff;font-family:var(--font-serif);font-size:1rem;font-weight:700;white-space:nowrap}
+.nav-logo span{color:var(--secondary);font-size:.8rem;display:block;font-weight:400}
+.nav-links{display:flex;gap:24px;align-items:center}
+.nav-links a{color:#fff;font-size:.85rem;font-weight:500;transition:color .3s;white-space:nowrap}
+.nav-links a:hover{color:var(--secondary)}
+.nav-cta-btn{background:var(--accent);color:#fff!important;padding:8px 18px;border-radius:30px;font-weight:700;font-size:.85rem}
+.nav-cta-btn:hover{background:#d47a2a}
+
+/* Hamburger */
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:8px;z-index:1001}
+.hamburger span{display:block;width:24px;height:2px;background:#fff;transition:transform .3s,opacity .3s}
+.hamburger.active span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
+.hamburger.active span:nth-child(2){opacity:0}
+.hamburger.active span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
+
+.mobile-menu{display:none;position:fixed;top:64px;left:0;width:100%;background:var(--primary);padding:20px;flex-direction:column;gap:16px;z-index:999}
+.mobile-menu.open{display:flex}
+.mobile-menu a{color:#fff;font-size:1rem;padding:10px 0;border-bottom:1px solid rgba(255,255,255,.1)}
+
+@media(max-width:768px){
+  .nav-links{display:none}
+  .hamburger{display:flex}
+}
+
+/* ===== HERO ===== */
+#hero{position:relative;min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;background:linear-gradient(135deg,var(--primary) 0%,#1a4a6e 40%,var(--secondary) 100%);overflow:hidden;padding:100px 20px 80px}
+
+/* Ripple animation */
+.ripple{position:absolute;border-radius:50%;border:2px solid rgba(255,255,255,.12);animation:ripple-expand 6s ease-out infinite}
+.ripple:nth-child(1){width:200px;height:200px;top:20%;left:15%;animation-delay:0s}
+.ripple:nth-child(2){width:300px;height:300px;top:50%;right:10%;animation-delay:2s}
+.ripple:nth-child(3){width:250px;height:250px;bottom:20%;left:40%;animation-delay:4s}
+.ripple:nth-child(4){width:180px;height:180px;top:10%;right:30%;animation-delay:1s}
+@keyframes ripple-expand{
+  0%{transform:scale(.5);opacity:.6}
+  100%{transform:scale(2.5);opacity:0}
+}
+
+.hero-content{position:relative;z-index:2;max-width:800px}
+.hero-content h1{color:#fff;font-family:var(--font-serif);font-size:clamp(2rem,6vw,3.5rem);font-weight:900;margin-bottom:20px;letter-spacing:.08em;animation:fadeSlideUp .8s ease-out both}
+.hero-content h2{color:rgba(255,255,255,.9);font-family:var(--font-serif);font-size:clamp(1rem,2.5vw,1.35rem);font-weight:500;margin-bottom:40px;line-height:1.9;letter-spacing:.03em;animation:fadeSlideUp .8s ease-out .3s both}
+
+@keyframes fadeSlideUp{
+  from{opacity:0;transform:translateY(30px)}
+  to{opacity:1;transform:translateY(0)}
+}
+
+.trust-badges{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-bottom:40px;animation:fadeSlideUp .8s ease-out .6s both}
+.trust-badge{background:rgba(255,255,255,.15);backdrop-filter:blur(4px);border:1px solid rgba(255,255,255,.2);border-radius:var(--radius);padding:14px 22px;color:#fff;font-size:.9rem;font-weight:500;display:flex;align-items:center;gap:8px}
+.trust-badge i{font-size:1.2rem;color:var(--secondary)}
+
+.hero-cta{display:inline-block;background:var(--accent);color:#fff;font-size:1.15rem;font-weight:700;padding:18px 40px;border-radius:50px;cursor:pointer;border:none;animation:fadeSlideUp .8s ease-out .9s both,pulse 2s infinite 1.5s;transition:transform .3s,box-shadow .3s}
+.hero-cta:hover{transform:scale(1.05);box-shadow:0 8px 30px rgba(232,145,58,.4)}
+
+@keyframes pulse{
+  0%,100%{box-shadow:0 4px 15px rgba(232,145,58,.3)}
+  50%{box-shadow:0 4px 30px rgba(232,145,58,.6)}
+}
+
+/* ===== SECTION 2: PROBLEMS ===== */
+.problems-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
+.problem-card{background:#fff;border:1px solid #e0e0e0;border-radius:var(--radius);padding:28px;display:flex;align-items:flex-start;gap:16px;transition:transform .3s,box-shadow .3s;cursor:default}
+.problem-card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.problem-icon{font-size:2rem;flex-shrink:0;width:50px;text-align:center}
+.problem-text{font-size:1rem;font-weight:500;line-height:1.7}
+.problems-resolve{text-align:center;margin-top:40px;font-family:var(--font-serif);font-size:1.25rem;font-weight:700;color:var(--secondary)}
+
+/* ===== SECTION 3: REASONS ===== */
+.reason-card{background:#fff;border-radius:var(--radius);padding:32px 32px 32px 40px;margin-bottom:24px;border-left:5px solid var(--secondary);box-shadow:var(--shadow);transition:transform .3s}
+.reason-card:hover{transform:translateY(-3px)}
+.reason-number{display:inline-block;background:var(--secondary);color:#fff;font-size:.85rem;font-weight:700;padding:4px 14px;border-radius:20px;margin-bottom:12px}
+.reason-card h3{font-family:var(--font-serif);font-size:1.2rem;font-weight:700;color:var(--primary);margin-bottom:8px;display:flex;align-items:center;gap:10px}
+.reason-card h3 i{color:var(--secondary);font-size:1.3rem}
+.reason-card h4{font-size:1rem;font-weight:500;color:#555;margin-bottom:12px}
+.reason-card p{font-size:.95rem;color:#444;line-height:1.9}
+
+.mini-cta{text-align:center;margin-top:48px}
+.btn-secondary{display:inline-block;background:var(--secondary);color:#fff;padding:14px 36px;border-radius:50px;font-weight:700;font-size:1rem;transition:transform .3s,box-shadow .3s}
+.btn-secondary:hover{transform:scale(1.05);box-shadow:0 6px 25px rgba(43,165,181,.3)}
+
+/* ===== SECTION 4: SERVICES ===== */
+.tabs{display:flex;justify-content:center;gap:8px;margin-bottom:32px;flex-wrap:wrap}
+.tab-btn{background:#fff;border:2px solid var(--secondary);color:var(--secondary);padding:12px 28px;border-radius:50px;font-size:.95rem;font-weight:700;cursor:pointer;transition:all .3s}
+.tab-btn.active,.tab-btn:hover{background:var(--secondary);color:#fff}
+.tab-content{display:none;background:#fff;border-radius:var(--radius);padding:36px;box-shadow:var(--shadow);animation:tabFade .4s ease}
+.tab-content.active{display:block}
+@keyframes tabFade{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+.tab-content .registration{display:inline-block;background:var(--sub-bg);padding:8px 16px;border-radius:8px;font-size:.85rem;color:var(--primary);font-weight:500;margin-bottom:20px}
+.tab-content h3{font-family:var(--font-serif);font-size:1.15rem;color:var(--primary);font-weight:700;margin-bottom:16px;display:flex;align-items:center;gap:8px}
+.tab-content h3 i{color:var(--secondary)}
+.service-list{padding-left:0}
+.service-list li{padding:10px 0;border-bottom:1px solid #eee;font-size:.95rem;line-height:1.7}
+.service-list li:last-child{border-bottom:none}
+.service-list li strong{color:var(--primary)}
+
+/* ===== SECTION 5: LEGAL ===== */
+.legal-alert-header{background:linear-gradient(135deg,rgba(217,64,64,.08),rgba(217,64,64,.03));border-radius:var(--radius);padding:24px;margin-bottom:40px;text-align:center;border:1px solid rgba(217,64,64,.15)}
+.legal-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;margin-bottom:40px}
+.legal-card{background:#fff;border-radius:var(--radius);padding:28px;text-align:center;box-shadow:var(--shadow)}
+.legal-card .icon{font-size:2.5rem;margin-bottom:12px}
+.legal-card h3{font-family:var(--font-serif);font-size:1.1rem;font-weight:700;color:var(--primary);margin-bottom:8px}
+.legal-card .law-ref{font-size:.8rem;color:#888;margin-bottom:8px}
+.legal-card p{font-size:.9rem;color:#555}
+
+.penalty-table{width:100%;border-collapse:collapse;background:#fff;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);margin-bottom:40px}
+.penalty-table thead{background:var(--danger);color:#fff}
+.penalty-table th,.penalty-table td{padding:14px 20px;text-align:left;font-size:.9rem}
+.penalty-table tbody tr{border-bottom:1px solid #eee}
+.penalty-table tbody tr:hover{background:rgba(217,64,64,.03)}
+.penalty-table td:last-child{color:var(--danger);font-weight:700}
+
+.legal-safe-box{background:var(--secondary);color:#fff;border-radius:var(--radius);padding:28px;text-align:center;font-size:1.05rem;font-weight:700;line-height:1.8}
+
+/* ===== SECTION 6: SUBSIDY ===== */
+.subsidy-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;margin-bottom:36px}
+.subsidy-card{background:linear-gradient(135deg,var(--primary),var(--secondary));color:#fff;border-radius:var(--radius);padding:28px;text-align:center;box-shadow:var(--shadow)}
+.subsidy-card .label{font-size:.9rem;opacity:.9;margin-bottom:8px}
+.subsidy-card .amount{font-family:var(--font-serif);font-size:2rem;font-weight:900}
+.subsidy-card .detail{font-size:.8rem;opacity:.85;margin-top:8px}
+.subsidy-total{text-align:center;font-family:var(--font-serif);font-size:1.6rem;font-weight:700;color:var(--primary);margin-bottom:36px}
+.subsidy-total .big{font-size:2.2rem;font-weight:900;color:var(--accent)}
+
+.alert-box{background:#FFFBEB;border:2px solid #F59E0B;border-radius:var(--radius);padding:24px;margin-bottom:24px}
+.alert-box p{font-size:.9rem;line-height:1.8;margin-bottom:6px}
+.alert-box p:last-child{margin-bottom:0}
+.info-box{background:#fff;border:2px solid var(--secondary);border-radius:var(--radius);padding:24px;margin-bottom:32px}
+.info-box p{font-size:.95rem;line-height:1.9}
+
+/* ===== SECTION 7: COST ===== */
+.cost-table-wrap{overflow-x:auto;margin-bottom:36px}
+.cost-table{width:100%;border-collapse:collapse;background:#fff;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
+.cost-table thead{background:var(--primary);color:#fff}
+.cost-table th,.cost-table td{padding:14px 20px;text-align:left;font-size:.9rem}
+.cost-table tbody tr{border-bottom:1px solid #eee}
+.cost-table tbody tr:last-child{background:var(--sub-bg);font-weight:700}
+.cost-table tbody tr:last-child td{color:var(--primary)}
+
+.monthly-highlight{text-align:center;margin-bottom:36px;padding:28px;background:#fff;border-radius:var(--radius);box-shadow:var(--shadow)}
+.monthly-highlight .icon{font-size:1.5rem;margin-bottom:8px}
+.monthly-highlight .amount{font-family:var(--font-serif);font-size:2rem;font-weight:900;color:var(--secondary)}
+.monthly-highlight .label{font-size:1rem;color:#666;margin-top:4px}
+
+.comparison-note{background:var(--primary);color:#fff;border-radius:var(--radius);padding:24px;margin-bottom:24px;font-size:.95rem;line-height:1.9}
+.risk-box{background:#fff;border:2px solid var(--danger);border-radius:var(--radius);padding:24px}
+.risk-box h4{color:var(--danger);font-size:1.05rem;font-weight:700;margin-bottom:12px}
+.risk-box p{font-size:.9rem;line-height:1.9;margin-bottom:8px}
+.risk-box p:last-child{margin-bottom:0}
+
+/* ===== SECTION 8: ENV ===== */
+#environment{position:relative;background:linear-gradient(135deg,var(--primary),var(--secondary));color:#fff;overflow:hidden}
+#environment .section-title{color:#fff}
+.env-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.env-text p{font-size:.95rem;line-height:1.9;opacity:.95}
+.sdg-badges{display:flex;flex-direction:column;gap:16px;align-items:center}
+.sdg-badge{width:100px;height:100px;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;background:rgba(255,255,255,.15);backdrop-filter:blur(4px);border:2px solid rgba(255,255,255,.3);transition:transform .5s;cursor:default}
+.sdg-badge:hover{transform:rotate(15deg) scale(1.1)}
+.sdg-badge .sdg-icon{font-size:1.6rem;margin-bottom:4px}
+.sdg-badge .sdg-label{font-size:.6rem;font-weight:700;text-align:center;line-height:1.2}
+.env-slogan{text-align:center;margin-top:48px;font-family:var(--font-serif);font-size:1.4rem;font-weight:700;font-style:italic;opacity:.9;letter-spacing:.05em}
+.env-slogan::before,.env-slogan::after{content:'"';font-size:2rem;vertical-align:middle;opacity:.5}
+.env-bottom{text-align:center;margin-top:24px;font-size:.95rem;opacity:.85;max-width:700px;margin-left:auto;margin-right:auto;line-height:1.8}
+@media(max-width:768px){.env-grid{grid-template-columns:1fr}.sdg-badges{flex-direction:row;justify-content:center}}
+
+/* Water bg animation for env section */
+#environment::before{content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:radial-gradient(ellipse at center,rgba(255,255,255,.05) 0%,transparent 70%);animation:waterShift 8s ease-in-out infinite}
+@keyframes waterShift{0%,100%{transform:translate(0,0)}50%{transform:translate(3%,2%)}}
+
+/* ===== SECTION 9: REVIEWS ===== */
+.reviews-scroll{display:flex;gap:24px;overflow-x:auto;padding-bottom:16px;scroll-snap-type:x mandatory}
+.review-card{flex:0 0 340px;scroll-snap-align:start;background:#fff;border-radius:var(--radius);padding:28px;box-shadow:var(--shadow);position:relative}
+.review-card::before{content:'';position:absolute;top:-10px;left:30px;width:20px;height:20px;background:#fff;transform:rotate(45deg);box-shadow:-2px -2px 5px rgba(0,0,0,.04)}
+.review-stars{color:#F59E0B;font-size:1rem;margin-bottom:12px}
+.review-text{font-size:.9rem;line-height:1.8;color:#444;margin-bottom:16px}
+.review-author{font-size:.8rem;color:#888;text-align:right}
+@media(max-width:768px){.review-card{flex:0 0 85vw}}
+
+/* ===== SECTION 10: ABOUT ===== */
+.about-table{width:100%;border-collapse:collapse;background:#fff;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);margin-bottom:32px}
+.about-table th,.about-table td{padding:14px 20px;font-size:.9rem;text-align:left;border-bottom:1px solid #eee}
+.about-table th{background:var(--primary);color:#fff;width:30%;font-weight:500}
+
+.license-badges{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:32px}
+.license-badge{background:#fff;border:1px solid var(--secondary);border-radius:8px;padding:12px 18px;font-size:.8rem;font-weight:500;color:var(--primary);transition:transform .3s;display:flex;align-items:center;gap:8px}
+.license-badge:hover{transform:scale(1.03)}
+.license-badge i{color:var(--secondary)}
+
+.distinction-box{background:var(--sub-bg);border:2px solid var(--primary);border-radius:var(--radius);padding:24px;margin-bottom:32px;font-size:.9rem;line-height:1.9}
+.distinction-box p{margin-bottom:8px}
+.distinction-box p:last-child{margin-bottom:0}
+
+.philosophy-box{background:var(--primary);color:#fff;border-radius:var(--radius);padding:32px;text-align:center;margin-bottom:32px}
+.philosophy-box .quote{font-family:var(--font-serif);font-size:1.3rem;font-weight:700;margin-bottom:12px;font-style:italic;letter-spacing:.05em}
+.philosophy-box .desc{font-size:.9rem;opacity:.85}
+
+.ceo-box{background:#fff;border-left:4px solid var(--secondary);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow);margin-bottom:40px;font-size:.9rem;line-height:1.9}
+
+/* Timeline */
+.timeline{position:relative;padding-left:40px;margin-top:40px}
+.timeline::before{content:'';position:absolute;left:14px;top:0;bottom:0;width:3px;background:var(--secondary);border-radius:3px}
+.timeline-item{position:relative;margin-bottom:32px}
+.timeline-dot{position:absolute;left:-33px;top:4px;width:16px;height:16px;background:var(--secondary);border-radius:50%;border:3px solid var(--sub-bg)}
+.timeline-year{font-family:var(--font-serif);font-weight:700;color:var(--primary);font-size:1rem;margin-bottom:4px}
+.timeline-desc{font-size:.9rem;color:#555;line-height:1.7}
+
+/* ===== SECTION 11: FAQ ===== */
+.faq-item{background:#fff;border-radius:var(--radius);margin-bottom:12px;box-shadow:0 2px 10px rgba(0,0,0,.05);overflow:hidden}
+.faq-question{display:flex;align-items:center;justify-content:space-between;padding:20px 24px;cursor:pointer;font-weight:700;font-size:1rem;color:var(--primary);transition:background .3s;gap:12px}
+.faq-question:hover{background:var(--sub-bg)}
+.faq-question .toggle{font-size:1.2rem;transition:transform .3s;flex-shrink:0;color:var(--secondary)}
+.faq-item.open .faq-question .toggle{transform:rotate(45deg)}
+.faq-answer{max-height:0;overflow:hidden;transition:max-height .4s ease,padding .3s ease}
+.faq-item.open .faq-answer{max-height:500px}
+.faq-answer-inner{padding:0 24px 20px;font-size:.9rem;line-height:1.9;color:#444}
+
+/* ===== SECTION 12: AREA ===== */
+.area-visual{display:flex;flex-direction:column;align-items:center;margin-bottom:32px}
+.area-circles{position:relative;width:300px;height:300px;margin-bottom:24px}
+.area-circle{position:absolute;border-radius:50%;border:2px dashed;display:flex;align-items:center;justify-content:center;text-align:center;font-weight:700}
+.area-circle.outer{width:300px;height:300px;border-color:var(--secondary);top:0;left:0;color:var(--secondary);font-size:.85rem}
+.area-circle.outer span{position:absolute;bottom:30px}
+.area-circle.inner{width:160px;height:160px;background:var(--accent);border:none;top:70px;left:70px;color:#fff;font-size:.9rem;animation:pulse 2s infinite;z-index:1}
+.area-text{text-align:center;font-size:1rem;line-height:1.8;max-width:600px}
+
+/* ===== SECTION 13: FINAL CTA ===== */
+#final-cta{position:relative;background:linear-gradient(135deg,var(--primary),var(--secondary));color:#fff;text-align:center;padding:80px 20px;overflow:hidden}
+#final-cta .ripple{border-color:rgba(255,255,255,.08)}
+.final-catch{font-family:var(--font-serif);font-size:clamp(1.4rem,3.5vw,2rem);font-weight:900;margin-bottom:20px;line-height:1.6;letter-spacing:.05em}
+.final-sub{font-size:1rem;opacity:.9;margin-bottom:36px;line-height:1.8}
+.final-phone{display:inline-block;font-family:var(--font-serif);font-size:clamp(2rem,5vw,3rem);font-weight:900;color:#fff;margin-bottom:16px;letter-spacing:.05em}
+.final-phone:hover{opacity:.9}
+.final-info{font-size:.9rem;opacity:.8;margin-bottom:24px}
+.btn-outline{display:inline-block;border:2px solid #fff;color:#fff;padding:14px 36px;border-radius:50px;font-weight:700;font-size:1rem;transition:all .3s}
+.btn-outline:hover{background:#fff;color:var(--primary)}
+
+/* ===== FOOTER ===== */
+.site-footer{background:var(--dark-navy);color:rgba(255,255,255,.7);padding:48px 20px 24px;text-align:center}
+.footer-logo{font-family:var(--font-serif);font-size:1.1rem;font-weight:700;color:#fff;margin-bottom:12px}
+.footer-info{font-size:.8rem;line-height:1.8;margin-bottom:16px}
+.footer-links{margin-bottom:16px}
+.footer-links a{color:rgba(255,255,255,.5);font-size:.8rem;margin:0 8px;transition:color .3s}
+.footer-links a:hover{color:#fff}
+.footer-copy{font-size:.75rem;opacity:.5}
+
+/* ===== FIXED CTA BAR ===== */
+.fixed-cta{position:fixed;bottom:0;left:0;width:100%;z-index:998;display:flex;transform:translateY(100%);transition:transform .5s ease-out}
+.fixed-cta.show{transform:translateY(0)}
+.fixed-cta a{flex:1;display:flex;align-items:center;justify-content:center;gap:8px;padding:16px;font-weight:700;font-size:1rem;color:#fff;transition:opacity .3s}
+.fixed-cta .cta-phone{background:linear-gradient(135deg,#E8913A,#D47A2A)}
+.fixed-cta .cta-mail{background:linear-gradient(135deg,var(--secondary),#1f8a97)}
+.fixed-cta a:hover{opacity:.9}
+
+/* ===== BODY PADDING FOR FIXED BARS ===== */
+body{padding-top:64px;padding-bottom:56px}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:768px){
+  .section-padding{padding:60px 0}
+  .reason-card{padding:24px 20px 24px 28px}
+  .about-table th{width:35%}
+  .subsidy-cards{grid-template-columns:1fr}
+  .legal-cards{grid-template-columns:1fr}
+  .problems-grid{grid-template-columns:1fr}
+  .area-circles{width:240px;height:240px}
+  .area-circle.outer{width:240px;height:240px}
+  .area-circle.inner{width:130px;height:130px;top:55px;left:55px}
+  .trust-badges{flex-direction:column;align-items:center}
+  .license-badges{flex-direction:column}
+  .tabs{gap:6px}
+  .tab-btn{padding:10px 16px;font-size:.85rem}
+}
+</style>
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="site-header" id="header">
+  <div class="nav-inner">
+    <div class="nav-logo">一色浄化槽管理センター<span>昭和55年創業 ─ 水環境のドクター</span></div>
+    <nav class="nav-links" aria-label="メインナビゲーション">
+      <a href="#problems">お悩み</a>
+      <a href="#reasons">選ばれる理由</a>
+      <a href="#services">サービス</a>
+      <a href="#subsidy">補助金</a>
+      <a href="#faq">FAQ</a>
+      <a href="#about">会社概要</a>
+      <a href="tel:0563728783" class="nav-cta-btn" aria-label="電話する"><i class="fa-solid fa-phone"></i> 電話する</a>
+    </nav>
+    <div class="hamburger" id="hamburger" aria-label="メニューを開く" role="button" tabindex="0">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+  <nav class="mobile-menu" id="mobileMenu" aria-label="モバイルナビゲーション">
+    <a href="#problems">お悩み</a>
+    <a href="#reasons">選ばれる理由</a>
+    <a href="#services">サービス</a>
+    <a href="#subsidy">補助金</a>
+    <a href="#faq">FAQ</a>
+    <a href="#about">会社概要</a>
+    <a href="tel:0563728783"><i class="fa-solid fa-phone"></i> 電話する</a>
+  </nav>
+</header>
+
+<!-- ===== HERO ===== -->
+<section id="hero">
+  <div class="ripple"></div>
+  <div class="ripple"></div>
+  <div class="ripple"></div>
+  <div class="ripple"></div>
+  <div class="hero-content">
+    <h1>一色の水を、守り続ける。</h1>
+    <h2>浄化槽のことなら——<br>昭和55年創業、一色町の「水環境のドクター」にお任せください。</h2>
+    <div class="trust-badges">
+      <div class="trust-badge"><i class="fa-solid fa-landmark"></i> 昭和55年（1980年）創業</div>
+      <div class="trust-badge"><i class="fa-solid fa-file-shield"></i> 西尾市長許可 第10号</div>
+      <div class="trust-badge"><i class="fa-solid fa-water"></i> 三河湾の環境を守るパートナー</div>
+    </div>
+    <a href="tel:0563728783" class="hero-cta" aria-label="お電話でのご相談"><i class="fa-solid fa-phone"></i> まずはお気軽にご相談ください</a>
+  </div>
+  <div class="wave-divider" style="position:absolute;bottom:0;left:0">
+    <svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,30 C360,60 720,0 1080,30 C1260,45 1380,25 1440,30 L1440,60 L0,60 Z" fill="#F7F5F0"/></svg>
+  </div>
+</section>
+
+<!-- ===== SECTION 2: PROBLEMS ===== -->
+<section id="problems" class="section-padding bg-white">
+  <div class="container">
+    <h2 class="section-title fade-in">こんなお悩み、ありませんか？</h2>
+    <div class="problems-grid">
+      <div class="problem-card fade-in">
+        <div class="problem-icon">💸</div>
+        <p class="problem-text">浄化槽の点検、ちゃんとやってもらえてるか不安…</p>
+      </div>
+      <div class="problem-card fade-in">
+        <div class="problem-icon">⚖️</div>
+        <p class="problem-text">法定検査って何？受けないとどうなるの？</p>
+      </div>
+      <div class="problem-card fade-in">
+        <div class="problem-icon">🏚</div>
+        <p class="problem-text">古い単独浄化槽、このまま使い続けて大丈夫？</p>
+      </div>
+      <div class="problem-card fade-in">
+        <div class="problem-icon">📝</div>
+        <p class="problem-text">補助金があるって聞いたけど、手続きが難しそう…</p>
+      </div>
+      <div class="problem-card fade-in">
+        <div class="problem-icon">🔧</div>
+        <p class="problem-text">排水管の詰まりが気になるけど、どこに頼めば…</p>
+      </div>
+      <div class="problem-card fade-in">
+        <div class="problem-icon">😟</div>
+        <p class="problem-text">業者が何社もあって、どこに頼めばいいかわからない…</p>
+      </div>
+    </div>
+    <p class="problems-resolve fade-in">→ すべて、当センターが解決します。</p>
+  </div>
+</section>
+
+<!-- Wave -->
+<div class="wave-divider">
+  <svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,30 C360,60 720,0 1080,30 C1260,45 1380,25 1440,30 L1440,60 L0,60 Z" fill="#EDF3F7"/></svg>
+</div>
+
+<!-- ===== SECTION 3: REASONS ===== -->
+<section id="reasons" class="section-padding bg-sub">
+  <div class="container">
+    <h2 class="section-title fade-in">一色浄化槽管理センターが<br>選ばれる6つの理由</h2>
+
+    <div class="reason-card fade-in">
+      <span class="reason-number">理由 ①</span>
+      <h3><i class="fa-solid fa-map-pin"></i> 一色町一筋。昭和55年創業の「水の専門家」</h3>
+      <h4>浄化槽管理に特化した、一色町前野新田の専門会社です</h4>
+      <p>当センターは昭和55年（1980年）の創業以来、一色町前野新田を拠点に、浄化槽の保守点検・清掃・修理のみに特化してきた専門会社です。干拓地特有の軟弱地盤や高い地下水位など、海抜ゼロメートル地帯ならではの課題を知り尽くしています。不用品回収や遺品整理等を行う他社とは異なり、「水インフラの維持管理」という技術領域を極め続けています。</p>
+    </div>
+
+    <div class="reason-card fade-in">
+      <span class="reason-number">理由 ②</span>
+      <h3><i class="fa-solid fa-yen-sign"></i> 最大88.5万円の補助金を逃さない</h3>
+      <h4>西尾市の補助金申請から施工まで完全サポート</h4>
+      <p>古い単独浄化槽やくみ取り便槽から合併処理浄化槽への転換で、設置費用最大58.5万円＋撤去費用最大30万円の手厚い補助金を受けられます。令和8年度（2026年4月〜）の受付再開に向け、今から準備を進めましょう。「工事着手前の申請」「先着順」という致命的なルールを確実にクリアする——書類作成から施工、その後の維持管理までワンストップ対応です。</p>
+    </div>
+
+    <div class="reason-card fade-in">
+      <span class="reason-number">理由 ③</span>
+      <h3><i class="fa-solid fa-check-double"></i> 保守点検も清掃も、ワンストップで完結</h3>
+      <h4>ひとつの窓口で、浄化槽のすべてをカバー</h4>
+      <p>浄化槽の保守点検（愛知県知事登録 登4 第42号）と清掃（西尾市長許可 第10号）の両方の資格・許可を保持。点検から汚泥引き抜き、装置修理、法定検査対応まで、別々の業者に依頼する必要がありません。窓口がひとつだから、連絡の行き違いもたらい回しも一切ナシ。</p>
+    </div>
+
+    <div class="reason-card fade-in">
+      <span class="reason-number">理由 ④</span>
+      <h3><i class="fa-solid fa-wrench"></i> 排水管トラブルも根本解決</h3>
+      <h4>高圧洗浄＋カメラ診断で、家全体の水回りをドクターチェック</h4>
+      <p>浄化槽だけでなく、キッチン・浴室・洗面所の排水管もケア。高圧洗浄で詰まりを除去し、原因不明の問題はカメラ診断で管内を直接確認。作業後は「洗浄前後の映像」をお見せするので、納得感が違います。"水回り全体のドクター"として、建物の健康寿命を延ばします。</p>
+    </div>
+
+    <div class="reason-card fade-in">
+      <span class="reason-number">理由 ⑤</span>
+      <h3><i class="fa-solid fa-shield-halved"></i> 行政許可番号「第10号」の歴史と信頼</h3>
+      <h4>西尾市長許可 第10号——地域に根ざす実績の証</h4>
+      <p>浄化槽清掃業の許可番号「第10号」は、西尾市において比較的初期に交付された番号です。これは、当センターが長年にわたり地域の水環境を支えてきた歴史と実績を示す、一朝一夕には得られない財産です。また、産業廃棄物収集運搬業（愛知県知事 第02300072175号）や建築物飲料水貯水槽清掃業（愛知県29貯 第3-1号）の登録も保持しており、水インフラに関して横断的に対応可能です。</p>
+    </div>
+
+    <div class="reason-card fade-in">
+      <span class="reason-number">理由 ⑥</span>
+      <h3><i class="fa-solid fa-fish"></i> 三河湾の恵みを守る使命感</h3>
+      <h4>うなぎ・干潟・養殖業——この町の宝を守る仕事</h4>
+      <p>一色産うなぎに代表される養殖業と、広大な干潟が育む生物多様性。その基盤を支えるのが、各家庭からの排水を適切に処理する浄化槽です。適切に管理された合併処理浄化槽はBODを90%以上除去し、窒素やリンの流入も抑制。一色の経済と自然を守る"環境の防波堤"として、一件一件の作業にあたっています。</p>
+    </div>
+
+    <div class="mini-cta fade-in">
+      <a href="tel:0563728783" class="btn-secondary" aria-label="電話で相談"><i class="fa-solid fa-phone"></i> ご質問だけでも、お気軽にどうぞ</a>
+    </div>
+  </div>
+</section>
+
+<!-- Wave -->
+<div class="wave-divider">
+  <svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,30 C360,60 720,0 1080,30 C1260,45 1380,25 1440,30 L1440,60 L0,60 Z" fill="#F7F5F0"/></svg>
+</div>
+
+<!-- ===== SECTION 4: SERVICES ===== -->
+<section id="services" class="section-padding bg-white">
+  <div class="container">
+    <h2 class="section-title fade-in">私たちのサービス</h2>
+    <div class="tabs fade-in">
+      <button class="tab-btn active" data-tab="tab1" aria-label="浄化槽の保守点検"><i class="fa-solid fa-microscope"></i> 保守点検</button>
+      <button class="tab-btn" data-tab="tab2" aria-label="浄化槽の清掃"><i class="fa-solid fa-broom"></i> 清掃</button>
+      <button class="tab-btn" data-tab="tab3" aria-label="総合サービス"><i class="fa-solid fa-droplet"></i> 総合サービス</button>
+    </div>
+
+    <div class="tab-content active" id="tab1">
+      <span class="registration"><i class="fa-solid fa-certificate"></i> 愛知県知事 登録 登4 第42号</span>
+      <h3><i class="fa-solid fa-microscope"></i> 浄化槽の保守点検</h3>
+      <ul class="service-list">
+        <li><strong>定期保守点検（年3〜4回）</strong>：微生物の活性状態確認、酸素供給量（ブロワ）の調整、消毒剤の補充、各装置の損耗チェック</li>
+        <li><strong>修理・部品交換</strong>：ブロワ、散気管、逆洗装置などの故障対応</li>
+        <li><strong>法定検査サポート</strong>：浄化槽法第7条（設置後検査）、第11条（定期検査）に基づく受検を全面支援</li>
+        <li><strong>水質検査</strong>：現場でのpH、透視度、残留塩素等の即時計測</li>
+      </ul>
+    </div>
+
+    <div class="tab-content" id="tab2">
+      <span class="registration"><i class="fa-solid fa-certificate"></i> 西尾市長 許可 第10号</span>
+      <h3><i class="fa-solid fa-broom"></i> 浄化槽の清掃（汚泥引き抜き）</h3>
+      <ul class="service-list">
+        <li><strong>年1回以上の定期清掃</strong>：蓄積した汚泥・スカムをバキュームカーで引き抜き</li>
+        <li><strong>附属機器の洗浄</strong>：フィルター、散水装置の清掃</li>
+        <li><strong>処理能力の回復</strong>：「ショートカット現象」（未浄化水の流出）を防止するシステムリセット</li>
+      </ul>
+    </div>
+
+    <div class="tab-content" id="tab3">
+      <h3><i class="fa-solid fa-droplet"></i> 水インフラの総合サービス</h3>
+      <ul class="service-list">
+        <li><strong>排水管高圧洗浄</strong>（キッチン・浴室・洗面所・屋外排水枡）</li>
+        <li><strong>カメラ診断</strong>による管内調査</li>
+        <li><strong>建築物飲料水貯水槽清掃</strong>（愛知県29貯 第3-1号）</li>
+        <li><strong>産業廃棄物収集運搬</strong>（愛知県知事 第02300072175号）</li>
+        <li><strong>浄化槽の転換設置工事</strong>（補助金対応）</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Wave -->
+<div class="wave-divider">
+  <svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,30 C360,60 720,0 1080,30 C1260,45 1380,25 1440,30 L1440,60 L0,60 Z" fill="#EDF3F7"/></svg>
+</div>
+
+<!-- ===== SECTION 5: LEGAL ===== -->
+<section id="legal" class="section-padding bg-sub">
+  <div class="container">
+    <h2 class="section-title fade-in">⚠ 知らなかったでは済まされない。<br>浄化槽管理は"法律上の義務"です</h2>
+
+    <div class="legal-alert-header fade-in">
+      <p>浄化槽法により、設置者（所有者）には<strong>3つの義務</strong>が課されています。</p>
+    </div>
+
+    <div class="legal-cards">
+      <div class="legal-card fade-in">
+        <div class="icon">🔍</div>
+        <h3>保守点検</h3>
+        <p class="law-ref">浄化槽法 第8条・第10条</p>
+        <p>微生物の確認、装置の調整、消毒剤の補充</p>
+      </div>
+      <div class="legal-card fade-in">
+        <div class="icon">🧹</div>
+        <h3>清掃</h3>
+        <p class="law-ref">浄化槽法 第9条・第10条</p>
+        <p>年1回以上の汚泥引き抜き義務</p>
+      </div>
+      <div class="legal-card fade-in">
+        <div class="icon">📊</div>
+        <h3>法定検査</h3>
+        <p class="law-ref">浄化槽法 第7条・第11条</p>
+        <p>県指定の第三者機関による検査</p>
+      </div>
+    </div>
+
+    <div class="fade-in">
+      <table class="penalty-table">
+        <thead><tr><th>違反行為</th><th>罰則の最高刑</th></tr></thead>
+        <tbody>
+          <tr><td>改善命令違反</td><td>6ヶ月以下の懲役 又は 100万円以下の罰金</td></tr>
+          <tr><td>無届・虚偽報告</td><td>3ヶ月以下の懲役 又は 50万円以下の罰金</td></tr>
+          <tr><td>法定検査 受検命令違反</td><td>30万円以下の過料</td></tr>
+          <tr><td>報告拒否・虚偽報告</td><td>30万円以下の罰金</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="legal-safe-box fade-in">
+      <i class="fa-solid fa-clipboard-check"></i> 当センターと契約すれば、3つの義務すべてをカバー。法的リスクはゼロになります。
+    </div>
+  </div>
+</section>
+
+<!-- Wave -->
+<div class="wave-divider">
+  <svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,30 C360,60 720,0 1080,30 C1260,45 1380,25 1440,30 L1440,60 L0,60 Z" fill="#F7F5F0"/></svg>
+</div>
+
+<!-- ===== SECTION 6: SUBSIDY ===== -->
+<section id="subsidy" class="section-padding bg-white">
+  <div class="container">
+    <h2 class="section-title fade-in">🎉 最大88.5万円！<br>西尾市の補助金を活用しましょう</h2>
+
+    <div class="subsidy-cards">
+      <div class="subsidy-card fade-in">
+        <p class="label">💴 設置費補助</p>
+        <p class="amount"><span class="count-up" data-target="585000">0</span>円</p>
+        <p class="detail">5人槽 332,000円 / 7人槽 414,000円 / 10人槽〜</p>
+      </div>
+      <div class="subsidy-card fade-in">
+        <p class="label">🏗 撤去＋配管工事</p>
+        <p class="amount">最大 <span class="count-up" data-target="300000">0</span>円</p>
+        <p class="detail">既存槽の撤去・配管工事費用</p>
+      </div>
+      <div class="subsidy-card fade-in">
+        <p class="label">♻ 雨水貯留槽への再利用</p>
+        <p class="amount">最大 約<span class="count-up" data-target="130000">0</span>円</p>
+        <p class="detail">既存槽を雨水貯留に転用する場合</p>
+      </div>
+    </div>
+
+    <p class="subsidy-total fade-in">合計で最大 <span class="big"><span class="count-up" data-target="885000">0</span>円</span> の補助を受けられます！</p>
+
+    <div class="alert-box fade-in">
+      <p>⚠ 必ず「工事着手前」に申請が必要です（着手後は一切不可）</p>
+      <p>⚠ 予算の範囲内で「先着順」です</p>
+      <p>⚠ 令和7年度の申請受付は終了。令和8年度（2026年4月〜）に向けて今から準備を！</p>
+    </div>
+
+    <div class="info-box fade-in">
+      <p>一色浄化槽管理センターは、西尾市の事務手続きに精通。申請書類の作成から施工、その後の維持管理までワンストップ対応で、数十万円の補助金を取りこぼしません。"施工業者"としてだけでなく、"補助金コンサルタント"としてもお任せください。</p>
+    </div>
+
+    <div class="mini-cta fade-in" style="text-align:center">
+      <a href="tel:0563728783" class="btn-secondary" aria-label="補助金について電話相談"><i class="fa-solid fa-phone"></i> 令和8年度の補助金について無料でご相談</a>
+    </div>
+  </div>
+</section>
+
+<!-- Wave -->
+<div class="wave-divider">
+  <svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,30 C360,60 720,0 1080,30 C1260,45 1380,25 1440,30 L1440,60 L0,60 Z" fill="#EDF3F7"/></svg>
+</div>
+
+<!-- ===== SECTION 7: COST ===== -->
+<section id="cost" class="section-padding bg-sub">
+  <div class="container">
+    <h2 class="section-title fade-in">実はお得？浄化槽の年間コスト</h2>
+
+    <div class="cost-table-wrap fade-in">
+      <table class="cost-table">
+        <thead><tr><th>費用項目</th><th>年間概算額</th><th>備考</th></tr></thead>
+        <tbody>
+          <tr><td>保守点検（年3〜4回）</td><td>10,000〜15,000円</td><td></td></tr>
+          <tr><td>清掃（年1回）</td><td>10,000〜20,000円</td><td>汚泥量による</td></tr>
+          <tr><td>法定検査</td><td>3,000〜5,000円</td><td>第三者機関</td></tr>
+          <tr><td>ブロワー電気代</td><td>約2,000〜3,000円</td><td>24時間稼働</td></tr>
+          <tr><td><strong>合計</strong></td><td><strong>25,000〜43,000円</strong></td><td><strong>月額 約2,000〜3,500円</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="monthly-highlight fade-in">
+      <div class="icon">💡</div>
+      <div class="amount">月々わずか 約<span class="count-up" data-target="2000">0</span>円〜<span class="count-up" data-target="3500">0</span>円</div>
+      <div class="label">で、法的義務もクリア＆安心の水環境を維持できます</div>
+    </div>
+
+    <div class="comparison-note fade-in">
+      <i class="fa-solid fa-comment-dots"></i> 公共下水道料金は水道使用量に比例。世帯人数が多い家庭や、庭への散水が多い環境では、浄化槽の方がお得になることも。さらに、浄化槽は家庭で処理を完結するため、大地震などの災害時にも強い（レジリエンス）という利点があります。
+    </div>
+
+    <div class="risk-box fade-in">
+      <h4><i class="fa-solid fa-triangle-exclamation"></i> 清掃を3年以上放置すると…</h4>
+      <p>→ 汚泥固着で通常清掃不可能に</p>
+      <p>→ 配管詰まりで掘り起こし工事が必要</p>
+      <p>→ 数十万円の予期せぬ出費が発生</p>
+      <p style="margin-top:12px;font-weight:700;color:var(--primary)">定期管理は"将来の大きな損失を防ぐ最小限の投資"です。</p>
+    </div>
+  </div>
+</section>
+
+<!-- Wave -->
+<div class="wave-divider">
+  <svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,30 C360,0 720,60 1080,30 C1260,15 1380,35 1440,30 L1440,60 L0,60 Z" fill="#1B3A5C"/></svg>
+</div>
+
+<!-- ===== SECTION 8: ENVIRONMENT ===== -->
+<section id="environment" class="section-padding">
+  <div class="container" style="position:relative;z-index:1">
+    <h2 class="section-title fade-in">三河湾の美しさを、次世代へ。</h2>
+
+    <div class="env-grid fade-in">
+      <div class="env-text">
+        <p>一色町が面する三河湾は閉鎖性海域。窒素・リンの流入による富栄養化を防ぐには、各家庭からの排水管理が不可欠です。最新の合併処理浄化槽は、有機物（BOD）を90%以上除去するだけでなく、赤潮の原因となる窒素やリンの除去率も高めた"先進的省エネ型"へ進化しています。</p>
+      </div>
+      <div class="sdg-badges">
+        <div class="sdg-badge">
+          <span class="sdg-icon">🎯</span>
+          <span class="sdg-label">目標6<br>安全な水と<br>トイレ</span>
+        </div>
+        <div class="sdg-badge">
+          <span class="sdg-icon">🐠</span>
+          <span class="sdg-label">目標14<br>海の豊かさ<br>を守ろう</span>
+        </div>
+        <div class="sdg-badge">
+          <span class="sdg-icon">🌿</span>
+          <span class="sdg-label">目標11<br>住み続けられる<br>まちづくり</span>
+        </div>
+      </div>
+    </div>
+
+    <p class="env-slogan fade-in">みんなで造ろう美しい町、住みよい環境</p>
+    <p class="env-bottom fade-in">養鰻業にとって水質悪化は"産業の死"を意味します。当センターの仕事は、一色のブランドと三河湾の生態系を守る"環境の防波堤"です。</p>
+  </div>
+</section>
+
+<!-- Wave -->
+<div class="wave-divider">
+  <svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,30 C360,60 720,0 1080,30 C1260,45 1380,25 1440,30 L1440,60 L0,60 Z" fill="#F7F5F0"/></svg>
+</div>
+
+<!-- ===== SECTION 9: REVIEWS ===== -->
+<section id="reviews" class="section-padding bg-white">
+  <div class="container">
+    <h2 class="section-title fade-in">お客様の声</h2>
+    <div class="reviews-scroll fade-in">
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">いつも丁寧に点検してくれるので安心しています。ブロワーの調子が悪い時もすぐに駆けつけてくれて、本当に頼りになります。地元に根付いた業者さんだから、安心感が違いますね。</p>
+        <p class="review-author">── 一色町在住 K様（70代）</p>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">補助金の手続きが全然わからなかったのですが、申請書類の書き方から全部教えてくれて、無事に補助金をもらえました。自分だけじゃ絶対ムリでした。</p>
+        <p class="review-author">── 一色町在住 S様（50代）</p>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">排水の流れが悪くて困っていたら、高圧洗浄でスッキリ解決。しかもカメラで汚れが流れる様子を見せてくれて、納得できました。次もお願いします。</p>
+        <p class="review-author">── 一色町在住 T様（40代）</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Wave -->
+<div class="wave-divider">
+  <svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,30 C360,60 720,0 1080,30 C1260,45 1380,25 1440,30 L1440,60 L0,60 Z" fill="#EDF3F7"/></svg>
+</div>
+
+<!-- ===== SECTION 10: ABOUT ===== -->
+<section id="about" class="section-padding bg-sub">
+  <div class="container">
+    <h2 class="section-title fade-in">一色町前野新田の、<br>浄化槽管理専門会社です</h2>
+
+    <table class="about-table fade-in">
+      <tr><th>会社名</th><td>有限会社 一色町浄化槽管理センター</td></tr>
+      <tr><th>代表取締役</th><td>加藤 竜太（令和7年5月就任）</td></tr>
+      <tr><th>所在地</th><td>〒444-XXXX 愛知県西尾市一色町前野新田25-1</td></tr>
+      <tr><th>電話番号</th><td><a href="tel:0563728783" style="color:var(--secondary);font-weight:700">0563-72-8783</a></td></tr>
+      <tr><th>設立</th><td>昭和55年（1980年）10月</td></tr>
+      <tr><th>資本金</th><td>500万円</td></tr>
+      <tr><th>事業内容</th><td>浄化槽保守点検・清掃・修理、排水管高圧洗浄、貯水槽清掃、産業廃棄物収集運搬</td></tr>
+    </table>
+
+    <div class="license-badges fade-in">
+      <div class="license-badge"><i class="fa-solid fa-key"></i> 浄化槽清掃業 西尾市長許可 第10号</div>
+      <div class="license-badge"><i class="fa-solid fa-clipboard-list"></i> 浄化槽保守点検業 愛知県知事登録 登4 第42号</div>
+      <div class="license-badge"><i class="fa-solid fa-building"></i> 建築物飲料水貯水槽清掃業 愛知県 29貯 第3-1号</div>
+      <div class="license-badge"><i class="fa-solid fa-truck"></i> 産業廃棄物収集運搬業 愛知県知事 第02300072175号</div>
+    </div>
+
+    <div class="distinction-box fade-in">
+      <p><strong><i class="fa-solid fa-circle-info"></i> ご確認ください</strong></p>
+      <p>当社は、愛知県西尾市一色町前野新田に本社を構える浄化槽管理の専門会社です。</p>
+      <p>同じ一色町内の「株式会社 一色厚生社」様（一色山荒子所在）とは、資本関係を含め一切の関係がない独立した別会社です。</p>
+      <p>お問い合わせ・ご契約の際は、会社名と所在地をご確認ください。</p>
+    </div>
+
+    <div class="philosophy-box fade-in">
+      <p class="quote">みんなで造ろう美しい町、住みよい環境</p>
+      <p class="desc">——水環境の専門家として、一色の暮らしと三河湾を守り続けます。</p>
+    </div>
+
+    <div class="ceo-box fade-in">
+      <p>令和7年5月、新代表取締役に加藤竜太が就任いたしました。<br>
+      昭和55年の創業以来培ってきた"一色の水を守る"という使命を受け継ぎながら、<br>
+      最新の省エネ型浄化槽や補助金制度への対応など、<br>
+      これからの時代にふさわしいサービスを提供してまいります。</p>
+    </div>
+
+    <h3 class="fade-in" style="font-size:1.2rem;color:var(--primary);margin-bottom:24px;text-align:center">沿革</h3>
+    <div class="timeline">
+      <div class="timeline-item fade-in">
+        <div class="timeline-dot"></div>
+        <p class="timeline-year">昭和55年（1980年）</p>
+        <p class="timeline-desc">創業。浄化槽の保守点検・清掃業務を開始</p>
+      </div>
+      <div class="timeline-item fade-in">
+        <div class="timeline-dot"></div>
+        <p class="timeline-year">平成初期</p>
+        <p class="timeline-desc">単独処理浄化槽から合併処理浄化槽への転換期。技術力を蓄積</p>
+      </div>
+      <div class="timeline-item fade-in">
+        <div class="timeline-dot"></div>
+        <p class="timeline-year">平成〜令和</p>
+        <p class="timeline-desc">排水管高圧洗浄、貯水槽清掃、産廃収集運搬と事業領域を拡大</p>
+      </div>
+      <div class="timeline-item fade-in">
+        <div class="timeline-dot"></div>
+        <p class="timeline-year">令和7年（2025年）</p>
+        <p class="timeline-desc">新代表就任。高度処理型浄化槽のメンテナンス技術を確立。SDGs時代の環境パートナーへ</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Wave -->
+<div class="wave-divider">
+  <svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,30 C360,60 720,0 1080,30 C1260,45 1380,25 1440,30 L1440,60 L0,60 Z" fill="#F7F5F0"/></svg>
+</div>
+
+<!-- ===== SECTION 11: FAQ ===== -->
+<section id="faq" class="section-padding bg-white">
+  <div class="container">
+    <h2 class="section-title fade-in">よくある質問</h2>
+
+    <div class="faq-item fade-in">
+      <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+        <span>Q. 浄化槽の点検は本当に必要ですか？</span>
+        <span class="toggle">+</span>
+      </div>
+      <div class="faq-answer"><div class="faq-answer-inner">はい、浄化槽法で義務付けられています。怠ると最悪の場合、6ヶ月以下の懲役または100万円以下の罰金が科される可能性があります。また、清掃を3年以上放置すると汚泥が固着し、数十万円の修繕費が発生するリスクもあります。定期点検は"将来の大きな損失を防ぐ最小の投資"です。</div></div>
+    </div>
+
+    <div class="faq-item fade-in">
+      <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+        <span>Q. 費用はどのくらいかかりますか？</span>
+        <span class="toggle">+</span>
+      </div>
+      <div class="faq-answer"><div class="faq-answer-inner">一般的な5人槽で、保守点検・清掃・法定検査・電気代を合わせて年間約25,000〜43,000円（月額約2,000〜3,500円）が目安です。下水道使用料と比較して、多人数世帯や井戸水併用世帯では浄化槽の方が安くなるケースも多くあります。個別の見積もりは無料で対応しておりますので、お気軽にお問い合わせください。</div></div>
+    </div>
+
+    <div class="faq-item fade-in">
+      <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+        <span>Q. 古い単独浄化槽を使い続けても大丈夫？</span>
+        <span class="toggle">+</span>
+      </div>
+      <div class="faq-answer"><div class="faq-answer-inner">法律上、直ちに違法ではありませんが、トイレの排水のみを処理する単独浄化槽は環境への負荷が大きく、行政からの転換指導が年々強まっています。西尾市の補助金を使えば最大88.5万円の補助を受けられます。ただし「工事着手前の申請」「先着順」というルールがあるため、早めのご相談をお勧めします。</div></div>
+    </div>
+
+    <div class="faq-item fade-in">
+      <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+        <span>Q. 補助金の手続きは難しいですか？</span>
+        <span class="toggle">+</span>
+      </div>
+      <div class="faq-answer"><div class="faq-answer-inner">書類自体は個人でも提出可能ですが、不備があると受理されず、先着順の枠を逃してしまうリスクがあります。当センターでは、書類作成から施工、維持管理報告までワンストップで対応しており、確実に補助金を受け取れるようサポートしています。</div></div>
+    </div>
+
+    <div class="faq-item fade-in">
+      <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+        <span>Q. どんなサービスに対応していますか？</span>
+        <span class="toggle">+</span>
+      </div>
+      <div class="faq-answer"><div class="faq-answer-inner">浄化槽の保守点検・清掃・修理を中心に、排水管の高圧洗浄、カメラ診断、貯水槽清掃、産業廃棄物の収集運搬、浄化槽の転換設置工事まで対応しています。水まわり全般のことなら何でもご相談ください。</div></div>
+    </div>
+
+    <div class="faq-item fade-in">
+      <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+        <span>Q. 他の業者と何が違うの？</span>
+        <span class="toggle">+</span>
+      </div>
+      <div class="faq-answer"><div class="faq-answer-inner">当センターは浄化槽の維持管理に特化した専門会社です。不用品回収や遺品整理などを幅広く手がける業者とは異なり、保守点検と清掃の両方の許可を自社で保有し、法定検査対応まで一気通貫で行えることが最大の強みです。加えて、一色町の地盤・排水路・水環境を40年以上にわたって見守り続けてきた"土地の記憶"が、広域業者にはない私たちの価値です。</div></div>
+    </div>
+
+    <div class="faq-item fade-in">
+      <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+        <span>Q. 「一色厚生社」さんとは同じ会社ですか？</span>
+        <span class="toggle">+</span>
+      </div>
+      <div class="faq-answer"><div class="faq-answer-inner">いいえ、まったくの別会社です。当社（有限会社 一色町浄化槽管理センター）は一色町前野新田に本社を置く浄化槽管理の専門会社であり、一色山荒子に所在する株式会社 一色厚生社様とは、資本関係を含め一切のつながりがありません。お電話やお問い合わせの際は、会社名と所在地をお確かめください。</div></div>
+    </div>
+
+    <div class="faq-item fade-in">
+      <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+        <span>Q. 災害時にはどうなりますか？</span>
+        <span class="toggle">+</span>
+      </div>
+      <div class="faq-answer"><div class="faq-answer-inner">一色町に拠点を構える当センターは、南海トラフ地震や高潮といった災害発生時にも、広域業者より圧倒的に早い初期対応が可能です。停電時のブロワー復旧アドバイスや、浸水した槽の緊急清掃など、地域を熟知したスタッフが迅速に駆けつけます。</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Wave -->
+<div class="wave-divider">
+  <svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,30 C360,60 720,0 1080,30 C1260,45 1380,25 1440,30 L1440,60 L0,60 Z" fill="#EDF3F7"/></svg>
+</div>
+
+<!-- ===== SECTION 12: AREA ===== -->
+<section id="area" class="section-padding bg-sub">
+  <div class="container">
+    <h2 class="section-title fade-in">対応エリア</h2>
+
+    <div class="area-visual fade-in">
+      <div class="area-circles">
+        <div class="area-circle outer"><span>西尾市全域・周辺市町村</span></div>
+        <div class="area-circle inner">西尾市一色町<br>全域<br><small style="font-size:.7rem">最短即日訪問！</small></div>
+      </div>
+      <p class="area-text">一色町前野新田に本社を構える当センターは、一色町内なら最短即日で駆けつけます。西尾市全域も対応可能です。</p>
+    </div>
+  </div>
+</section>
+
+<!-- Wave -->
+<div class="wave-divider">
+  <svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,30 C360,0 720,60 1080,30 C1260,15 1380,35 1440,30 L1440,60 L0,60 Z" fill="#1B3A5C"/></svg>
+</div>
+
+<!-- ===== SECTION 13: FINAL CTA ===== -->
+<section id="final-cta">
+  <div class="ripple"></div>
+  <div class="ripple"></div>
+  <div class="ripple"></div>
+  <div class="container" style="position:relative;z-index:1">
+    <p class="final-catch fade-in">一色の水を守ること。<br>それは、あなたの暮らしを守ること。</p>
+    <p class="final-sub fade-in">浄化槽のこと、排水のこと、補助金のこと——<br>何でもまずはお気軽にお電話ください。</p>
+    <a href="tel:0563728783" class="final-phone fade-in" aria-label="電話する"><i class="fa-solid fa-phone"></i> 0563-72-8783</a>
+    <p class="final-info fade-in">月〜金 8:00〜17:00（祝日除く）<br>愛知県西尾市一色町前野新田25-1</p>
+    <a href="mailto:info@example.com" class="btn-outline fade-in" aria-label="メールで問い合わせ"><i class="fa-solid fa-envelope"></i> メールでのお問い合わせはこちら</a>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <p class="footer-logo">一色浄化槽管理センター</p>
+  <p class="footer-info">〒444-XXXX 愛知県西尾市一色町前野新田25-1<br>TEL: 0563-72-8783</p>
+  <div class="footer-links">
+    <a href="#">プライバシーポリシー</a>｜<a href="#">サイトマップ</a>
+  </div>
+  <p class="footer-copy">&copy; 2026 有限会社 一色町浄化槽管理センター All Rights Reserved.</p>
+</footer>
+
+<!-- ===== FIXED CTA BAR ===== -->
+<div class="fixed-cta" id="fixedCta" aria-label="お問い合わせ">
+  <a href="tel:0563728783" class="cta-phone" aria-label="電話する"><i class="fa-solid fa-phone"></i> 今すぐ電話する</a>
+  <a href="mailto:info@example.com" class="cta-mail" aria-label="メールで相談"><i class="fa-solid fa-envelope"></i> メールで相談</a>
+</div>
+
+<script>
+// ===== HAMBURGER MENU =====
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobileMenu');
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('active');
+  mobileMenu.classList.toggle('open');
+});
+// Close menu on link click
+mobileMenu.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', () => {
+    hamburger.classList.remove('active');
+    mobileMenu.classList.remove('open');
+  });
+});
+
+// ===== HEADER SCROLL SHADOW =====
+const header = document.getElementById('header');
+window.addEventListener('scroll', () => {
+  header.classList.toggle('scrolled', window.scrollY > 50);
+});
+
+// ===== SCROLL FADE-IN (Intersection Observer) =====
+const fadeEls = document.querySelectorAll('.fade-in');
+const fadeObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry, i) => {
+    if (entry.isIntersecting) {
+      // Stagger siblings
+      const siblings = entry.target.parentElement.querySelectorAll('.fade-in');
+      let idx = Array.from(siblings).indexOf(entry.target);
+      if (idx < 0) idx = 0;
+      entry.target.style.transitionDelay = (idx * 0.1) + 's';
+      entry.target.classList.add('visible');
+      fadeObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.15 });
+fadeEls.forEach(el => fadeObserver.observe(el));
+
+// ===== TABS =====
+document.querySelectorAll('.tab-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById(btn.dataset.tab).classList.add('active');
+  });
+});
+
+// ===== FAQ ACCORDION =====
+document.querySelectorAll('.faq-question').forEach(q => {
+  q.addEventListener('click', () => {
+    const item = q.parentElement;
+    const isOpen = item.classList.contains('open');
+    // Close all
+    document.querySelectorAll('.faq-item').forEach(fi => fi.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+    q.setAttribute('aria-expanded', !isOpen);
+  });
+  q.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); q.click(); }
+  });
+});
+
+// ===== COUNT-UP ANIMATION =====
+const countEls = document.querySelectorAll('.count-up');
+const countObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const el = entry.target;
+      const target = parseInt(el.dataset.target);
+      const duration = 1800;
+      const startTime = performance.now();
+      const animate = (now) => {
+        const elapsed = now - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+        // Ease out
+        const eased = 1 - Math.pow(1 - progress, 3);
+        el.textContent = Math.floor(eased * target).toLocaleString();
+        if (progress < 1) requestAnimationFrame(animate);
+        else el.textContent = target.toLocaleString();
+      };
+      requestAnimationFrame(animate);
+      countObserver.unobserve(el);
+    }
+  });
+}, { threshold: 0.5 });
+countEls.forEach(el => countObserver.observe(el));
+
+// ===== FIXED CTA BAR =====
+setTimeout(() => {
+  document.getElementById('fixedCta').classList.add('show');
+}, 2000);
+</script>
+</body>
+</html>
